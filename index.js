@@ -2,6 +2,7 @@
 // var http = require('http');
 var express = require('express');
 var app = express();
+var port = process.env.PORT || 3030;
 //express sebagai pengganti hpp untuk sebagai server
 
 // http.createServer(function(req, res){
@@ -15,6 +16,7 @@ app.get('/', function(req , res){
 });
 //kegunaan expres untuk mengetahui perinttah yang ingin dipakai
 //ada get, post, put dan delet yang sering dipakai untuk crud
-app.listen(3030);
+app.listen(port);
     //dan listen ini adalah port yang dituju ketika dipanggil sebagai api
-console.log('listen on port : 3030');
+console.log('listen on port :', port);
+
