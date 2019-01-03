@@ -14,6 +14,15 @@ var port = process.env.PORT || 3030;
 app.get('/', function(req , res){
     res.send('hallo Anggit');
 });
+app.post('/', function(req, res){
+    res.send('untunk post');
+});
+app.delete('/', function(req, res){
+    res.send('untuk delete');
+});
+app.put('/', function(req, res){
+    res.send('untuk put');
+});
 //kegunaan expres untuk mengetahui perinttah yang ingin dipakai
 //ada get, post, put dan delet yang sering dipakai untuk crud
 app.listen(port);
